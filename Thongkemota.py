@@ -1,9 +1,9 @@
 import pandas as pd
 import streamlit as st
 # Đường dẫn đến các tệp CSV
-hue_path = "C:/Users/Duy Khanh/OneDrive/Desktop/train_pyhton/hue_data.csv"  # Đường dẫn đến tệp CSV cho Huế
-hcm_path = "C:/Users/Duy Khanh/OneDrive/Desktop/train_pyhton/hcm_data.csv"  # Đường dẫn đến tệp CSV cho Hồ Chí Minh
-hanoi_path = "C:/Users/Duy Khanh/OneDrive/Desktop/train_pyhton/hanoi_data.csv"  # Đường dẫn đến tệp CSV cho Hà Nội
+#hue_path =   # Đường dẫn đến tệp CSV cho Huế
+#hcm_path =   # Đường dẫn đến tệp CSV cho Hồ Chí Minh
+#hanoi_path =  # Đường dẫn đến tệp CSV cho Hà Nội
 
 # Đọc dữ liệu từ các tệp CSV
 hue_df = pd.read_csv(hue_path)
