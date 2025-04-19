@@ -27,7 +27,6 @@ data['Huế'] += [0.0] * (expected_length - len(data['Huế']))  # Thêm giá tr
 # Sau khi sửa lỗi, tạo DataFrame
 df = pd.DataFrame(data)
 
-
 # Vẽ biểu đồ
 fig, ax = plt.subplots()
 ax.plot(df['Tháng'], df['Hồ Chí Minh'], label='Hồ Chí Minh', linestyle='-', marker='o')
@@ -49,5 +48,5 @@ ax.legend()
 st.pyplot(fig)
 
 # Lưu vào thư mục hiện tại
-file_path = "C:/Users/Duy Khanh/OneDrive/Desktop/train_pyhton./bieudoAQI.png"  # Đường dẫn và tên tệp
+# file_path = # Đường dẫn và tên tệp bieudoAQI.png
 fig.savefig(file_path)  # Lưu biểu đồ vào file
