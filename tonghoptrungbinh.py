@@ -1,7 +1,7 @@
 import pandas as pd
 
 # Đọc dữ liệu từ tệp CSV gốc
-csv_path = "C:/Users/Duy Khanh/OneDrive/Desktop/train_pyhton/tong_hop_3_tinh.csv"
+# csv_path = # "tong_hop_3_tinh.csv"
 df = pd.read_csv(csv_path)
 
 # Tạo cột "Tháng" nếu chưa có
@@ -27,7 +27,7 @@ monthly_average_df = df_filtered.groupby("Tháng").agg({column: "mean" for colum
 monthly_average_df = monthly_average_df.round(1)
 
 # Xuất bảng thống kê trung bình theo tháng
-output_path_avg = "C:/Users/Duy Khanh/OneDrive/Desktop/train_pyhton/tong_hop_trung_binh_theo_thang.csv"
+output_path_avg = # "tong_hop_trung_binh_theo_thang.csv"
 monthly_average_df.to_csv(output_path_avg, index=False)
 
 print("Bảng thống kê trung bình theo tháng đã được tạo và lưu tại:", output_path_avg)
