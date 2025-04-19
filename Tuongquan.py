@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import streamlit as st
 
 # Đọc dữ liệu từ tệp CSV
-csv_path = "C:/Users/Duy Khanh/OneDrive/Desktop/train_pyhton/tong_hop_trung_binh_theo_thang.csv"
+# csv_path = #tong_hop_trung_binh_theo_thang.csv
 df = pd.read_csv(csv_path)
 
 # Xử lý dữ liệu nếu cần thiết
@@ -32,6 +32,5 @@ ax.set_xlabel('Chất ô nhiễm')
 ax.set_ylabel('Chỉ số AQI')
 ax.legend()  # Hiển thị chú thích
 
-# Hiển thị trên Streamlit và xuất sang tệp
+# Hiển thị trên Streamlit
 st.pyplot(fig)  # Hiển thị trên Streamlit
-fig.savefig("C:/Users/Duy Khanh/OneDrive/Desktop/train_pyhton/combined_scatterplot_output.png")  # Xuất sang tệp
