@@ -3,7 +3,7 @@ from datetime import datetime
 from unidecode import unidecode  # Thư viện để loại bỏ dấu
 
 # Đọc dữ liệu từ tệp CSV gốc
-csv_path = "C:/Users/Duy Khanh/OneDrive/Desktop/train_pyhton/historical_air_quality_2021_vi.csv"
+csv_path = #"historical_air_quality_2021_vi.csv"
 df = pd.read_csv(csv_path)
 
 # Chuyển đổi "Thời gian cập nhật" sang định dạng datetime
@@ -64,7 +64,7 @@ summary_df = df_provinces.groupby(["Mã trạm", "Tháng", "Tỉnh/Thành phố"
 summary_df = summary_df.round(1)
 
 # Xuất dữ liệu sang tệp CSV mới
-output_path = "C:/Users/Duy Khanh/OneDrive/Desktop/train_pyhton/tong_hop_3_tinh.csv"
+output_path = # "tong_hop_3_tinh.csv"
 summary_df.to_csv(output_path, index=False)
 
 print("Dữ liệu đã được xuất thành công tại:", output_path)
